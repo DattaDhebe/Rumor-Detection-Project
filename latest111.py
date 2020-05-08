@@ -1,3 +1,5 @@
+//Actual Working of Project
+
 import re
 import json, os
 import pandas as pd
@@ -22,6 +24,8 @@ consumer_key = 'kkEHLGQM2iRKAIRzh33eAQ2RN'
 consumer_secret = 'pNa2PFNYUVWSnUPYuXaFPybExsl3ABY1oLHBkPTtY1AZIJpFd7'
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
+
+
 
 
 # model = gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin.gz', binary=True)

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Graph Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{% load static %}
+<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css'%}">
+
+<!--for icon lock and user-->
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css'%}">
+
+<!--for djustment between text boxes-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/util2.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/graph.css'%}">
+<!--validate name and password-->
+	<link rel="stylesheet" type="text/css" href="js/validate.js">
+	<script src="js/validate.js"></script>
+
+
+</head>
+<body background="{% static 'images/city.jpg' %}>
+
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/city.jpg');">
+			<div class="wrap-login100 p-t-190 p-b-30">
+				<form class="login100-form validate-form">
+					<div class="login100-form-avatar">
+						<img src="{% static 'images/twitter.png' %}" alt="AVATAR">
+					</div>
+
+					<span class="login100-form-title p-t-20 p-b-45">
+						Graph Analysis
+					</span>
+
+
+					<div class="container-login100-form-btn p-t-10">
+						<img src="{% static 'images/gr.png' %}">
+					<span class="login100-form-title p-t-20 p-b-45">
+					</span>
+					<!-- <button class="login100-form-btn" onclick="location.href='home2.html'" type="button">  -->
+					<button class="login100-form-btn" onclick="location.href= '\\home/'" type="button">
+						Go Back
+         			</button>
+
+					</div>
+
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+<!--Bootstarp js-->
+	<script src="{% static 'bootstrap/js/popper.js'%}"></script>
+	<script src="{% static 'bootstrap/js/bootstrap.min.js'%}"></script>
+	<!--login validate name and password-->
+	<script src="{% static 'js/validate.js'%}"></script>
+
+
+</body>
+</html>

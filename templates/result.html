@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Result Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{% load static %}
+<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+<!--for icon lock and user-->
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome.min.css' %}">
+
+<!--for djustment between text boxes-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main3.css' %}">
+
+<!--main js-->
+	<script src="{% static 'js/main.js' %}"></script>
+
+</head>
+<body background="{% static 'images/city.jpg' %}">
+
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/city.jpg');">
+			<div class="wrap-login100 p-t-190 p-b-30">
+				<form mathod="post" class="login100-form validate-form">
+					<div class="login100-form-avatar">
+						<img src="{% static 'images/twitter.png' %}" alt="AVATAR">
+					</div>
+
+					<span class="login100-form-title p-t-20 p-b-45">
+						Rumor Detection System
+					</span>
+					<h5 class="login100-form-title">Result :</h5>
+					<h6 class="login100-form-tweet p-t-20 p-b-45"> {{result}}</h6>
+					<div class="container-login100-form-btn p-t-10">
+					<button class="login100-form-btn" value="submit" onclick="location.href= '\\home/' " type="button">
+						Go Back
+         			</button>
+					</div>
+
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+<!--&lt;!&ndash;main js&ndash;&gt;-->
+<!--	<script src="js/main.js"></script>-->
+
+</body>
+</html>

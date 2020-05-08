@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Data Retrival</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{% load static %}
+<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css'%}">
+
+<!--for icon lock and user-->
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css'%}">
+
+<!--for djustment between text boxes-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/util.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main3.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main4.css'%}">
+
+</head>
+<body background="{% static 'images/city.jpg' %}">
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/city.jpg');">
+			<div class="wrap-login100 p-t-190 p-b-30">
+				<form  class="login100-form validate-form">
+					<div class="login100-form-avatar">
+						<img src="{% static 'images/twitter.png' %}" alt="AVATAR">
+					</div>
+
+
+
+					<span class="login100-form-title p-t-20 p-b-45">
+						Tweets related to keywords
+					</span>
+
+					{% for item in text1 %}
+							<h6 class="login100-form-tweet p-t-20 p-b-45">{{item}}</h6>
+					{% endfor %}
+
+
+					<div class="container-login100-form-btn p-t-10">
+						<button class="login100-form-btn" onclick="location.href= 'graph/'" type="button">
+						Watch Graphs
+         				</button>
+         				<button class="login100-form-btn" onclick="result();" type="button">
+						Detect Rumour
+         				</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+	
+		
+<!--Bootstarp js-->
+	<!--login validate name and password-->
+	<script src="{% static 'js/validate.js'%}"></script>
+	<script src="{% static 'js/validate_info.js'%}"></script>
+
+</body>
+</html>

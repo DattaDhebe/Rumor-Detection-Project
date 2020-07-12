@@ -15,3 +15,6 @@ Network (CNN) to quickly detect rumour. LSTM networks makes predictions
 based on time series data. It also overcomes problems faced while training
 traditional Recurrent Neural Network (RNN), like, exploding and vanishing
 gradient. Using forwarding contents, this system detect rumour.
+
+Our Paper Published On:
+http://www.testmagzine.biz/index.php/testmagzine/article/view/3951

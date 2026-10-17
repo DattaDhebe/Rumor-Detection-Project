@@ -1,4 +1,4 @@
-//Actual Working of Project
+# Actual working implementation
 
 import re
 import json, os
@@ -18,10 +18,10 @@ import gensim
 import tweepy
 import os
 import matplotlib.pyplot as plt
-access_token = '1185203655705653249-MI55LF0YDXJHU06sATMMQtHjfWrkKF'  # access details of tweet
-access_token_secret = '9PCjIq70gj0o8zHgrtkvr1K6vlTo5H2P1TyQcfOqyh7B3'
-consumer_key = 'kkEHLGQM2iRKAIRzh33eAQ2RN'
-consumer_secret = 'pNa2PFNYUVWSnUPYuXaFPybExsl3ABY1oLHBkPTtY1AZIJpFd7'
+access_token = os.environ["TWITTER_ACCESS_TOKEN"]
+access_token_secret = os.environ["TWITTER_ACCESS_TOKEN_SECRET"]
+consumer_key = os.environ["TWITTER_CONSUMER_KEY"]
+consumer_secret = os.environ["TWITTER_CONSUMER_SECRET"]
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 
